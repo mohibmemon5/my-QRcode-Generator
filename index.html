@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My QR Code By Inspiners</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets\favicon.png">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <p>Enter the url to generate <span>QR Code</span></p>
+        <input type="text" placeholder="Enter url here..." id="qrText">
+        <div id="imgBox">
+            <img src="" id="qrImage">
+        </div>
+        <p id="errorMsg">Invalid URL. Please enter a valid link.</p>
+        <button onclick="generateQR()" type="button">Generate QR Code</button>
+        <button onclick="downloadQR()" type="button" id="downloadBtn">Download QR Code</button>
+        <p class="credittext">Powered By <span><a href="https://www.inspiners.com/" target="_blank">Inspiners</a></span></p>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
